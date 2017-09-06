@@ -1,0 +1,95 @@
+table, th, td
+{
+  border: 1px solid orange;
+  text-align: center;
+  font-family: verdana;
+  font-size: 18;
+}
+table
+{
+  position: relative;
+}
+th
+{ text-align: center;
+}
+  .footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+   }  
+
+   #header{ 
+       position: fixed;     
+       text-align: center;    
+       top: 0px; 
+       width: 100%;
+   }  
+
+.nv
+   {
+     background-color: yellow;
+     margin: 10px;
+     font-size: 40;
+     
+   }
+
+.nv a
+{
+  color: black;
+}
+a:unvisted
+{
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover
+{
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h2
+{ animation-name: pop;
+  animation: pop 1s ease;
+  animation-iteration-count: 5;
+  padding-top: 0;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 20px;
+  font-family: comic sans ms;
+  text-shadow: -2px 2px 3px;
+  color: #f48042;
+}
+
+@keyframes pop
+{ 
+  25%
+  {
+      -webkit-transform: scale(1,1.25);
+      transform: scale(1,1.25);
+  }
+  50%
+  {
+    -webkit-transform: scale(1.25,1.5);
+    transform: scale(1.25,1.5);
+  }
+  75%
+  {
+  -webkit-transform: scale(1.5,1.75);
+  transform: scale(1.5,1.75);
+  }
+  
+  100%
+  {-webkit-transform: scale(1.75,2);
+  transform: scale(1.75,2);
+  }
+}

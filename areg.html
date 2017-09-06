@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Succesfully Subscribed</title>
+	<style>
+		#ty
+		{
+			color: red;
+			font-size: 50px;
+		}
+		div
+		{
+			color: yellow;
+			font-size: 20px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#fd").hide();
+    });
+    $("#show").click(function(){
+        $("#fd").show();
+    });
+    $("#fdtog").click(function(){
+        $("#gif").fadeToggle("slow");
+    });
+    $(".slide").animate({left: "+=500", width:"500px", height: "500px"},{duration: 3000,
+	easing: "swing"});
+	$(".slide").animate({left: "-=500", width: "300px", height: "300px"},{duration: 3000,
+	easing: "linear"});
+});
+</script>
+</head>
+<body background="https://wallpaperscraft.com/image/manchester_united_futbol_logotip_103654_1920x1080.jpg">
+<p id="ty">Thank You!!!</p>
+<div>
+You have successfully subscribed to us.
+We look forward to your participation in the fan club. <br>
+You will not be disappointed by our club. <br>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<p id="fd">We are not like other fan clubs. <br>
+We do not create problems with other fan club or post nonsense or disrescpecting articles about any other players. <br>
+We hope that you like our content and our punctuality about the timely updates.
+</p>
+</div><br>
+<img src="https://media.giphy.com/media/1Vfy68RXWacHS/giphy.gif" alt="" id="gif" class="slide" width="300" height="300"><br>
+<button id="fdtog">Click to fade in/out the gif image</button><br><br>
+</body>
+</html>

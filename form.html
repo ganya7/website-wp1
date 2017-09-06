@@ -1,0 +1,69 @@
+<html>
+<head>
+ <title>Registration Form </title>
+ <link rel="stylesheet" href="style.css">
+ <style type="text/css">
+   #sec
+   {
+     margin-left: 250px;
+     margin-right: 250px;
+     padding: 5px;
+     border: 5px;
+     background-color: lightgrey;
+     position: relative;
+   }
+ </style>
+ <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="jqueryvalid.js">
+</script>
+
+</head>
+<body background="http://wallpapercave.com/wp/wc1682846.jpg" text="red">
+<h2> <center>Manchester United Fan Club Registration Form </center> </h2>
+<nav class="nv"><center>
+  <a href="https://www.Facebook.com/manchesterunited/">Facebook | </a>
+  <a href="https://www.twitter.com/manutd">Twitter | </a>
+  <a href="https://www.instagram.com/manchesterunited/?hl=en">Instagram | </a>
+  </center>
+</nav>
+<center>
+  <section id="sec">
+  <form autocomplete="on" method="get" action="areg.html" name="myform" onsubmit="return validateform()">
+  First name:<br>
+  <input type="text" name="firstname" id="fname">
+  <br><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br><br>
+  E-mail address:<br>
+  <input type="text" name="email" id="email" placeholder="example@gmail.com">
+  <br><br>
+  Phone number:<br>
+  <input type="text" name="number" id="number" placeholder="99999 99999">
+  <br><br>
+  Birthdate:<br>
+  <input type="text" name="bdate" placeholder="dd/mm/yyyy"><br><br><!-- min="1917-01-01" max="2016-12-31" -->
+  Why do you support this club?<br><br>
+  <textarea name="message" id="txt" rows="10" cols="30">Enter your comments.
+  </textarea><br><br>
+  Who is your favourtite player in the current squad?<br><br>
+  <input type="checkbox" name="player" value="DGea"> De Gea<br>
+  <input type="checkbox" name="player" value="LShaw"> Luke Shaw&emsp;&emsp;&emsp; &nbsp;
+  <input type="checkbox" name="player" value="CSmalling">Chris Smalling&emsp;&emsp;&emsp;&emsp;
+  <input type="checkbox" name="player" value="EBailley"> Eric Bailley&emsp;&emsp;
+  <input type="checkbox" name="player" value="AValencia"> Antonio Valencia<br>
+  <input type="checkbox" name="player" value="AHererra"> Ander Hererra &emsp;&emsp;
+  <input type="checkbox" name="player" value="PPogba"> Paul Pogba    &emsp;&emsp;&emsp;&emsp;&emsp;
+  <input type="checkbox" name="player" value="JMata"> Juan Mata<br>
+  <input type="checkbox" name="player" value="WRooney"> Wayne Rooney&emsp;&emsp;
+  <input type="checkbox" name="player" value="ZIbrahimovic"> Zlatan Ibrahimovic&emsp;&emsp;
+  <input type="checkbox" name="player" value="MRashford"> Marcus Rashford<br>
+  <br>
+  <input type="radio" name="term"> I accept the terms and conditons <br><br>
+  <input type="submit" id="submit" value="Submit">
+  <input type="reset">
+  </form>
+</section>
+</center>
+</body>
+</html>
